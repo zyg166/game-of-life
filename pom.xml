@@ -68,6 +68,8 @@
                             <excludes>
                                 <exclude>%regex[.*integration.*]</exclude>
                             </excludes>
+                            <forkCount>1</forkCount>
+                            <reuseForks>false</reuseForks>
                         </configuration>
                     </execution>
                     <execution>
@@ -81,6 +83,8 @@
                             <includes>
                                 <include>%regex[.*integration.*]</include>
                             </includes>
+                            <forkCount>1</forkCount>
+                            <reuseForks>false</reuseForks>
                         </configuration>
                     </execution>
                 </executions>
