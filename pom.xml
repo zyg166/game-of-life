@@ -440,6 +440,13 @@
                                 <format>html</format>
                                 <format>xml</format>
                             </formats>
+                              <instrumentation>
+                                    <excludes>
+                                        <exclude>**/*Test.class</exclude>
+                                         <exclude>**/When*.class</exclude>
+                                        <exclude>generated/*.class</exclude>
+                                    </excludes>
+                              </instrumentation>
                         </configuration>
                     </plugin>
                     <plugin>
