@@ -6,7 +6,7 @@ import org.springframework.web.servlet.ModelAndView;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
-
+@Test
 public class WhenDisplayingTheHomePage {
 
     @Test
