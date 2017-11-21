@@ -113,7 +113,30 @@
                     </plugin>
                 </plugins>
             </build>
+            <reporting>
+                <plugins>
+                     <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>cobertura-maven-plugin</artifactId>
+                        <version>${cobertura.version}</version>
+                        <configuration>
+                            <formats>
+                                <format>html</format>
+                                <format>xml</format>
+                            </formats>
+                            <instrumentation>
+						      <excludes>
+						        <include>**/*.class</include>
+						        <exclude>**/*Test.class</exclude>
+						        <exclude>**/Test*.class</exclude>
+						      </excludes>
+						    </instrumentation>
+                        </configuration>
+                    </plugin> 
+                 </plugins>
+            </reporting>
         </profile>
+        
     </profiles>
     <dependencies>
         <dependency>
